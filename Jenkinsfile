@@ -6,7 +6,7 @@ pipeline {
    stages{
     stage('CompileandRunSonarAnalysis') {
             steps {	
-		sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=nandhini1007_DevSecOps-with-Jenkins-Terraform-AWS-Kubernetes-main -Dsonar.organization=devsecops-buggyapp -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=4ac72bc77db33f644f2e03f1f871a3c8f2417fa2'
+		sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=sample-devsecops_sampleproject -Dsonar.organization=sample-devsecops -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=14f3f6ef09680ea0682d2869676470aa251bfad9'
 			}
         } 
   }
